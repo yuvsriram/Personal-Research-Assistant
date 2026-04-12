@@ -1,0 +1,9 @@
+openai
+langchain-openai
+langchain
+python-dotenv
+duckduckgo-search
+langchain-community
+langsmith
+mlflow
+ddgs
