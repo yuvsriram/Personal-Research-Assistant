@@ -24,7 +24,6 @@ def create_research_plan(topic):
 
     clean_questions = []
     for line in lines:
-        # 🔥 THIS is the key fix
         line = re.sub(r"^\d+\.\s*", "", line)  # removes "1. ", "2. "
         line = line.strip("- ").strip()
         
