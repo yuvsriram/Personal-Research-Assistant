@@ -3,7 +3,7 @@ from llm.planner import create_research_plan
 from tools.search_tool import search_web
 from llm.summarizer import summarize_research
 
-st.title("🤖 Personal Research Assistant")
+st.title("Personal Research Assistant")
 
 topic = st.text_input("Enter a topic:")
 
@@ -20,11 +20,11 @@ if st.button("Research"):
             result = search_web(q)
             findings.append(result)
 
-        st.write("🧠 Generating report...")
+        st.write("Generating report...")
 
         final_report = summarize_research(topic, findings)
 
-        st.subheader("📊 Final Report")
+        st.subheader("Final Report")
         st.write(final_report)
     else:
         st.warning("Please enter a topic")
