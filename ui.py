@@ -16,7 +16,7 @@ if st.button("Research"):
         findings = []
 
         for q in questions:
-            st.write(f"➡️ {q}")
+            st.write(f" -> {q}")
             result = search_web(q)
             findings.append(result)
 
